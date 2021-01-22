@@ -1,0 +1,27 @@
+{
+  "name": "svelte-fluttered",
+  "version": "0.0.3",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "svelte": "src/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "author": "Samuel Stroschein",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.38.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "svelte": "^3.16.7"
+  },
+  "files": [
+    "src",
+    "dist"
+  ]
+}
