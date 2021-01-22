@@ -4,7 +4,7 @@ This is a proof of concept which I developed after experiencing frustration (aga
 
 ### Example:
 
-The proof of concept get's rid of all 6 different "align-content, justify-content, align-items" etc. by just "mainAxisAlignment" and "crossAxisAlignment".  
+The proof of concept get's rid of all 6 different CSS allignment options (which never work because you used the wrong one) "align-content, justify-content, align-items" etc. by just "mainAxisAlignment" and "crossAxisAlignment".  
 
 ![](https://user-images.githubusercontent.com/35429197/105533937-14267000-5ced-11eb-889e-3988258da081.png)
 
