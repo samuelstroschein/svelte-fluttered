@@ -23,5 +23,9 @@
   "files": [
     "src",
     "dist"
-  ]
+  ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/samuelstroschein/svelte-fluttered"
+  }
 }
