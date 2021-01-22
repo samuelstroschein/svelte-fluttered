@@ -11,8 +11,8 @@ The proof of concept get's rid of all 6 different CSS allignment options (which 
 ```svelte
 <Center>
     <h1>I am a centered HTML element.</h1>
-  </Center>
-  <Column>
+</Center>
+<Column>
     <Row mainAxisAlignment="start" crossAxisAlignment="center">
       <h2>I am an element in a row</h2>
       <p>
@@ -38,7 +38,7 @@ The proof of concept get's rid of all 6 different CSS allignment options (which 
         <p>in other words all regular css alignment options are supported</p>
       </Row>
     </Row>
-  </Column>
+</Column>
 ```
 
 ### How it works:
