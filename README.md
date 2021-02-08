@@ -37,7 +37,7 @@ First problem: Why is everything a div? HTML has meaningful tags such as a "<p>"
 A row with two "<p>" children which are centered along the main axis (x-axis) of the row.  
 
 ### General idea:
-Make HTML/CSS layout more readable. If I want a row, I should just be able to write <Row> the same way as I can just write <h1>. Furthermore, CSS alignment is confusing. Six different alignment properties for actually only two different things: the main and the cross axis. Why not call it main and cross axis?  
+Make HTML/CSS layout more readable. If I want a row, I should just be able to write "<Row>" the same way as I can just write "<h1>". Furthermore, CSS alignment is confusing. Six different alignment properties for actually only two different things: the main and the cross axis. Why not call it main and cross axis?  
     
 #### What about Tailwind CSS?
 While Tailwind simplifies CSS, it's hard to grasp what a div with 5+ classes does. Plus, one can use Tailwind classes on the components. For example, the SizedBox can take as height parameter "w-5" from Tailwind CSS as the underlying components are nothing else than abstracted HTML elements with CSS styles.  
