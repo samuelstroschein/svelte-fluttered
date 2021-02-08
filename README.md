@@ -25,7 +25,7 @@ Besides the brackets, it is clear what I can expect. A row, whose main axis is c
   <p>World</p>
 </div>
 ```
-First problem: Why is everything a div? HTML has meaningful tags such as a "<p>". I have to look into the CSS (whether inline or not) to understand that the following div is displayed as a row. Furthermore,  "justify-content", "justify-items", "justify-self", "align-content", "align-items", "place-content", "place-items" and "place-items". Which CSS property is the correct one? I have no clue. Telling by the memes, I am not alone.
+First problem: Why is everything a div? HTML has meaningful tags such as a `<p>`. I have to look into the CSS (whether inline or not) to understand that the following div is displayed as a row. Furthermore,  "justify-content", "justify-items", "justify-self", "align-content", "align-items", "place-content", "place-items" and "place-items". Which CSS property is the correct one? I have no clue. Telling by the memes, I am not alone.
     
 **Proposed implementation:**
 ```svelte
@@ -34,10 +34,10 @@ First problem: Why is everything a div? HTML has meaningful tags such as a "<p>"
   <p>World</p>
 </Row>
 ```
-A row with two "<p>" children which are centered along the main axis (x-axis) of the row.  
+A row with two `<p>` children which are centered along the main axis (x-axis) of the row.  
 
 ### General idea:
-Make HTML/CSS layout more readable. If I want a row, I should just be able to write "<Row>" the same way as I can just write "<h1>". Furthermore, CSS alignment is confusing. Six different alignment properties for actually only two different things: the main and the cross axis. Why not call it main and cross axis?  
+Make HTML/CSS layout more readable. If I want a row, I should just be able to write `<Row>` the same way as I can just write `<h1>`. Furthermore, CSS alignment is confusing. Six different alignment properties for actually only two different things: the main and the cross axis. Why not call it main and cross axis?  
     
 #### What about Tailwind CSS?
 While Tailwind simplifies CSS, it's hard to grasp what a div with 5+ classes does. Plus, one can use Tailwind classes on the components. For example, the SizedBox can take as height parameter "w-5" from Tailwind CSS as the underlying components are nothing else than abstracted HTML elements with CSS styles.  
