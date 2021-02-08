@@ -48,10 +48,12 @@ Disclaimer: This is a proof of concept. Don't expect the components to work in e
 <Component [parameter1] [parameter2] ... /> children <Component/>  
 
 **Components:**  
+```svelte
 <Row [mainAxisAlignment] [crossAxisAlignment]> </Row>  
 <Column [mainAxisAlignment] [crossAxisAlignment]> </Column>  
 <Center> </Center>  
 <SizedBox [height] [width]> </SizedBox>  
+```
 
 **Parameters:**
 Generally, all valid CSS works. But since this proposal is about clearing up CSS mess, the alignment options can be written as shorthand e.g. instead of "flex-start" only "start".  
