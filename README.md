@@ -45,7 +45,9 @@ While Tailwind simplifies CSS, it's hard to grasp what a div with 5+ classes doe
 ### Already (partially working) implemented components:  
 Disclaimer: This is a proof of concept. Don't expect the components to work in every situation (actually expect the opposite). Any PR is welcome.   
 **Legend**:   
+```svelte
 <Component [parameter1] [parameter2] ... /> children <Component/>  
+```
 
 **Components:**  
 ```svelte
@@ -58,8 +60,10 @@ Disclaimer: This is a proof of concept. Don't expect the components to work in e
 **Parameters:**
 Generally, all valid CSS works. But since this proposal is about clearing up CSS mess, the alignment options can be written as shorthand e.g. instead of "flex-start" only "start".  
 
+```svelte
 [mainAxisAlignment]={start|end|center|between|around|evenly}  
-[crossAxisAlignment]={start|end|center|between|around|evenly}  
+[crossAxisAlignment]={start|end|center|between|around|evenly}
+```
 
 ### How it works:
 
