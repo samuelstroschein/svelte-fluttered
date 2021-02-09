@@ -39,22 +39,28 @@ A row with two `<p>` children which are centered along the main axis (x-axis) of
 ### General idea:
 Make HTML/CSS layout more readable. If I want a row, I should just be able to write `<Row>` the same way as I can just write `<h1>`. Furthermore, CSS alignment is confusing. Six different alignment properties for actually only two different things: the main and the cross axis. Why not call it main and cross axis?  
     
-#### What about Tailwind CSS?
-While Tailwind simplifies CSS, it's hard to grasp what a div with 5+ classes does. Plus, one can use Tailwind classes on the components. For example, the SizedBox can take as height parameter "w-5" from Tailwind CSS as the underlying components are nothing else than abstracted HTML elements with CSS styles.  
+### What about Tailwind CSS/CSS classes in general?  
+Every component has a globalClass parameter. GlobalClass works just like the regular class="something" except that the class has to be globally defined due to Svelte limitations. Because Tailwind classes are globally defined, you should be able to just use a component and pass Tailwind CSS classes to the parameter "globalClass". 
+```svelte
+<Row globalClass="w-4 h-4" mainAxisAlignment="end">
+  <p>A child element</p>
+</Row>
+```
+More about the mentioned Svelte shortcoming can be read [here](https://github.com/sveltejs/svelte/issues/2870). 
 
 ### Already (partially working) implemented components:  
 Disclaimer: This is a proof of concept. Don't expect the components to work in every situation (actually expect the opposite). Any PR is welcome.   
 **Legend**:   
 ```svelte
-<Component [parameter1] [parameter2] ... /> children <Component/>  
+<Component [globalClass] [parameter1] [parameter2] ... /> children <Component/>  
 ```
 
 **Components:**  
 ```svelte
-<Row [mainAxisAlignment] [crossAxisAlignment]> </Row>  
-<Column [mainAxisAlignment] [crossAxisAlignment]> </Column>  
-<Center> </Center>  
-<SizedBox [height] [width]> </SizedBox>  
+<Row [globalClass] [mainAxisAlignment] [crossAxisAlignment]> </Row>  
+<Column [globalClass] [mainAxisAlignment] [crossAxisAlignment]> </Column>  
+<Center [globalClass]> </Center>  
+<SizedBox [globalClass] [height] [width]> </SizedBox>  
 ```
 
 **Parameters:**

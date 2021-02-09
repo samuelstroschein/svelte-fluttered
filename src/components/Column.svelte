@@ -1,4 +1,5 @@
 <script>
+    export let globalClass;
     export let mainAxisAlignment;
     export let crossAxisAlignment;
   
@@ -38,6 +39,7 @@
     )};
       align-self: {processAxisAlignment(crossAxisAlignment)}
       "
+    class={globalClass}
   >
     <slot />
   </div>

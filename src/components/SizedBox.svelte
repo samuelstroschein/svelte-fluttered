@@ -1,4 +1,5 @@
 <script>
+    export let globalClass;
     export let height;
     export let width;
 </script>
@@ -8,6 +9,8 @@
     "
     width: {width};
     height: {height};
-    ">
+    "
+    class={globalClass}
+    >
   <slot />
 </div>

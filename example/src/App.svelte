@@ -36,7 +36,7 @@
         <h5>Of course we can also be</h5>
       <h5>aligned around and so on.</h5>
     </Row>
-    <SizedBox height="5rem" />
+    <SizedBox height="5rem"/>
   </Column>
   <Center>
     <p>All of the rows you saw above, where contained in one column.</p>
@@ -48,10 +48,6 @@
     padding: 1em;
     max-width: 240px;
     margin: 0 auto;
-  }
-
-  .code-example {
-    max-width: 500px;
   }
 
   @media (min-width: 640px) {

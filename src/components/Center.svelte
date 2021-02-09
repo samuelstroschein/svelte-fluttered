@@ -1,3 +1,6 @@
+<script>
+  export let globalClass;
+</script>
 <div
   style="
     display: flex; 
@@ -5,6 +8,7 @@
     justify-content: center;
     align-items: center
     "
+  class={globalClass}
 >
   <div>
     <slot />

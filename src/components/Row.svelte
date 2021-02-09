@@ -1,6 +1,8 @@
 <script>
+  export let globalClass;
   export let mainAxisAlignment;
   export let crossAxisAlignment;
+  
 
   const officialAxisAlignments = [
     "flex-start",
@@ -37,6 +39,7 @@
   )};
     align-items: {processAxisAlignment(crossAxisAlignment)}
     "
+  class={globalClass}
 >
   <slot />
 </div>
