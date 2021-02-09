@@ -1,7 +1,7 @@
 {
   "name": "svelte-fluttered",
   "version": "0.2.0",
-  "description": "",
+  "description": "Proof of concept: Svelte layout components as abstraction layer.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "svelte": "src/index.js",
@@ -25,7 +25,14 @@
     "dist"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/samuelstroschein/svelte-fluttered"
+    "type": "git",
+    "url": "git+https://github.com/samuelstroschein/svelte-fluttered.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuelstroschein/svelte-fluttered/issues"
+  },
+  "homepage": "https://github.com/samuelstroschein/svelte-fluttered#readme",
+  "directories": {
+    "example": "example"
   }
 }
