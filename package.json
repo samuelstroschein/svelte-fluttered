@@ -10,7 +10,7 @@
     "dev": "rollup -c -w"
   },
   "keywords": [
-    "svelte"
+    "svelte flutter swiftui layout css tailwind tailwindcss"
   ],
   "author": "Samuel Stroschein",
   "license": "ISC",
