@@ -1,0 +1,1 @@
+<h1 class="text-3xl text-indigo-700">Hi how are you ?</h1>
