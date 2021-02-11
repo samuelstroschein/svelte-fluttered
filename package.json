@@ -1,7 +1,7 @@
 {
   "name": "svelte-fluttered",
-  "version": "0.2.0",
-  "description": "Proof of concept: Svelte layout components as abstraction layer.",
+  "version": "0.3.0",
+  "description": "Flexible Svelte layout components as abstraction layer inspired by Flutter.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "svelte": "src/index.js",
