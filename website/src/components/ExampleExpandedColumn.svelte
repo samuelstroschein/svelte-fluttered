@@ -14,6 +14,7 @@
 <Expanded globalClass="border-4">
     <Column
         mainAxisAlignment="center"
+        crossAxisAlignment="end"
         mainAxisSize="max"
         globalClass="border-4 border-dashed"
     >

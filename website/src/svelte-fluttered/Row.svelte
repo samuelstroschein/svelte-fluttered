@@ -11,7 +11,6 @@
 <div
   style="
     display: flex; 
-    align-self: flex-start;
     justify-content: {processAxisAlignment(
     mainAxisAlignment
   )};
