@@ -43,6 +43,17 @@ Besides the brackets, it is clear what I can expect. A row, whose main axis is c
 #### Why fluttered is better than pure HTML & CSS:
     
 If you read the fluttered implementation, it is clear what you can expect: A row with two `<p>` children which are centered along the main axis (x-axis) of the row. Looking at the CSS implementation, the first problem araises with the second character: Why is everything a div? HTML has meaningful tags such as a `<p>`. I have to look into the CSS (whether inline or not) to understand that the following div is displayed as a row. Furthermore,  "justify-content", "justify-items", "justify-self", "align-content", "align-items", "place-content", "place-items" and "place-items". Which CSS property is the correct one? I have no clue. Telling by the memes, I am not alone. 
+
+## How to use:
+```svelte
+<script>
+    import { Row, [Column etc.] } from "svelte-fluttered";
+</script>
+
+<Row>
+    <child/>
+</Row>
+```
     
 ## What about Tailwind CSS/CSS classes in general?  
 Every component has a globalClass parameter. GlobalClass works just like the regular class="something" except that the class has to be globally defined due to Svelte limitations. Because Tailwind classes are globally defined, you should be able to just use a component and pass Tailwind CSS classes to the parameter "globalClass". 
