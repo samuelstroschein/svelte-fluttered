@@ -85,36 +85,6 @@ Generally, all valid CSS works. But since this proposal is about clearing up CSS
 [mainAxisSize]="min"|"max"
 ```
 
-### How it works:
-
-**mainAxisAlignment** \= the main axis alignment -> row = x-axis, column = y-axis
-
-**crossAxisAlignment** \= the cross axis alignment -> row = y-axis, column = x-axis
-
-**mainAxisSize** \= the main axis size (stretch or not)-> row = x-axis, column = y-axis
-
-Fill in any of the official CSS axis alignments or the shorthand version
-
-```javascript
-    const officialAxisAlignments = [
-      "flex-start",
-      "flex-end",
-      "center",
-      "space-between",
-      "space-around",
-      "space-evenly",
-    ];
-  
-    const shortAxisAlignments = [
-      "start",
-      "end",
-      "center",
-      "between",
-      "around",
-      "evenly",
-    ];
-```
-
 ### TODO
 
 - [x] Basic layout components such as Column, Row, Center and Expanded
