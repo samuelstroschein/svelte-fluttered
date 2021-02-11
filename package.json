@@ -31,8 +31,8 @@
   "bugs": {
     "url": "https://github.com/samuelstroschein/svelte-fluttered/issues"
   },
-  "homepage": "https://github.com/samuelstroschein/svelte-fluttered#readme",
+  "homepage": "https://svelte-fluttered.vercel.app/",
   "directories": {
-    "example": "example"
+    "example": "website"
   }
 }
