@@ -1,5 +1,5 @@
 <script>
-    import Column from "./../svelte-fluttered/Column.svelte";
+    import Column from "../svelte-fluttered/Column.svelte";
     import Expanded from "../svelte-fluttered/Expanded.svelte";
     import Row from "../svelte-fluttered/Row.svelte";
 </script>

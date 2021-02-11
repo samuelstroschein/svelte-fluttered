@@ -5,7 +5,7 @@
   export let crossAxisAlignment = "";
 
   import processAxisAlignment from "./js/processAxisAlignment";
-  import processColumnMainAxisSize from "./js/processMainAxisSize.js";
+  import processMainAxisSize from "./js/processMainAxisSize.js";
 </script>
 
 <div
@@ -16,7 +16,7 @@
     align-content: {processAxisAlignment(
     crossAxisAlignment
   )};
-    height: {processColumnMainAxisSize(
+    height: {processMainAxisSize(
     mainAxisSize
   )};
     justify-content: {processAxisAlignment(mainAxisAlignment)};

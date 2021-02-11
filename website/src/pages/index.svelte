@@ -1,5 +1,5 @@
 <script>
-    import ExampleExpandedColumn from "./../components/ExampleExpandedColumn.svelte";
+    import ExampleExpandedColumn from "../examples/ExampleExpandedColumn.svelte";
 </script>
 
 <ExampleExpandedColumn />
