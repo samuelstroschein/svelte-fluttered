@@ -1,14 +1,12 @@
 <script>
-    import EnableSvelteFluttered from "./../svelte-fluttered/EnableSvelteFluttered.svelte";
+    import FlexRoot from "./../svelte-fluttered/FlexRoot.svelte";
 </script>
 
 <!--     
-    EnableSvelteFluttered component does nothing else than defining a 
+    FlexRoot component does nothing else than defining a 
     root height and width (the users screen size) for
     components that make use of CSS flex (most of them).
 -->
-<EnableSvelteFluttered>
-    <div class="p-10">
-        <slot />
-    </div>
-</EnableSvelteFluttered>
+<FlexRoot globalClass="p-10 max-w-screen-lg mx-auto">
+    <slot />
+</FlexRoot>
