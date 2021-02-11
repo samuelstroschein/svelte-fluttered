@@ -21,6 +21,7 @@
             mainAxisAlignment="between"
             crossAxisAlignment="center"
             globalClass="border-4 border-dashed"
+            mainAxisSize="min"
         >
             <img
                 class="w-64 h-64 border-4 border-dashed"
@@ -39,7 +40,7 @@
             </Column>
         </Row>
         <Row
-            mainAxisAlignment="around"
+            mainAxisAlignment="center"
             crossAxisAlignment="end"
             globalClass="border-4 border-dashed"
         >
