@@ -1,34 +1,11 @@
 <script>
-  export let globalClass;
-  export let mainAxisAlignment;
-  export let crossAxisAlignment;
-  
+  export let globalClass = "";
+  export let mainAxisSize = "max";
+  export let mainAxisAlignment = "start";
+  export let crossAxisAlignment = "";
 
-  const officialAxisAlignments = [
-    "flex-start",
-    "flex-end",
-    "center",
-    "space-between",
-    "space-around",
-    "space-evenly",
-  ];
-
-  const shortAxisAlignments = [
-    "start",
-    "end",
-    "center",
-    "between",
-    "around",
-    "evenly",
-  ];
-
-  const processAxisAlignment = (axisAlignment) => {
-    if (officialAxisAlignments.includes(axisAlignment)) return axisAlignment;
-    var indexPossibleShorthand = shortAxisAlignments.indexOf(axisAlignment);
-    if (indexPossibleShorthand != -1)
-      return officialAxisAlignments[indexPossibleShorthand];
-    else return "";
-  };
+  import processAxisAlignment from "./js/processAxisAlignment";
+  import processMainAxisSize from "./js/processMainAxisSize.js";
 </script>
 
 <div
@@ -36,6 +13,9 @@
     display: flex; 
     justify-content: {processAxisAlignment(
     mainAxisAlignment
+  )};
+    width: {processMainAxisSize(
+    mainAxisSize
   )};
     align-items: {processAxisAlignment(crossAxisAlignment)}
     "
