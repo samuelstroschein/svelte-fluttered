@@ -1,16 +1,12 @@
 <script>
-    export let globalClass;
-    export let height;
-    export let width;
+  export let globalClass = "";
+  export let height;
+  export let width;
 </script>
 
-
-<div style=
-    "
+<div style="
     width: {width};
     height: {height};
-    "
-    class={globalClass}
-    >
+    " class={globalClass}>
   <slot />
 </div>

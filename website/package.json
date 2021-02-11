@@ -7,7 +7,8 @@
     "snp": "snowpack dev"
   },
   "dependencies": {
-    "svelte": "^3.24.0"
+    "svelte": "^3.24.0",
+    "svelte-collapsible": "0.0.8"
   },
   "devDependencies": {
     "@roxi/routify": "^2.12.0",
