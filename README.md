@@ -9,7 +9,7 @@ Let's say I want to display a row, in which the children are centered on the mai
 ![](https://github.com/samuelstroschein/svelte-fluttered/blob/main/row_example.png?raw=true)
 
 <details>
-<summary><h3>Flutter implementation:</h3></summary>
+<summary><h3>Flutter implementation: (click me)</h3></summary>
 <p>
     
 ```dart
